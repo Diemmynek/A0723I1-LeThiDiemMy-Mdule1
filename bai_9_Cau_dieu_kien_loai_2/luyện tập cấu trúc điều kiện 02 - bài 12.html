@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 12</title>
+</head>
+<body>
+</body>
+<script>
+    let tienBd=+prompt("Nhập số vốn ban đầu:");
+    let month=+prompt("Số tháng cho gửi :");
+    let laisuat=+prompt("Lãi suất  :");
+    laisuat=laisuat/100;
+    let trmonth=tienBd*(Math.pow(1+(laisuat),month))-tienBd;
+    alert("So tien lai hang thang nhan la:"+trmonth);
+
+</script>
+</html>
