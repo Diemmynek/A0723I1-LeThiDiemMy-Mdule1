@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ điển</title>
+</head>
+<body>
+<script>
+    var word = prompt("Nhập từ: ")
+    var Enghlish = ["apple","banana","orange"];
+    var Vietnamese = ["táo","chuối","cam"];
+    var check = true;
+    for(var i = 0;i<Enghlish.length;i++){
+        if(Enghlish[i] == word){
+            alert("Từ tiếng việt tương ứng là: "+Vietnamese[i]);
+            break;
+        }else {
+            check = false;
+        }
+    }
+    if(check == false){
+        alert("không tìm thấy");
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doi chuoi tư dang thuong sang dang hoa</title>
+</head>
+<body>
+<script>
+    var str = prompt(""); //My
+    var UPPER = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    var LOWER = "abcdefghijklmnopqrstuvwxyz"
+    var result = [];
+    for(var i=0;i<str.length;i++){
+           // hàm indexOf dùng để tìm một kí tự bên trong chuổi
+        // trả về một số, nếu không tìm thấy thì trả về số -1
+        if(UPPER.indexOf(str[i])!== -1){
+            result.push(str[i].toLowerCase());
+        }else if(LOWER.indexOf(str[i])!== -1){
+            result.push(str[i].toUpperCase());
+        }else{
+            result.push(str[i]);
+        }
+    }
+    document.write(result.join(''));
+</script>
+</body>
+</html>

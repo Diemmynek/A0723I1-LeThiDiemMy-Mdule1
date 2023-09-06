@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 03</title>
+</head>
+<body>
+<script>
+    var n = prompt("Nhập số phần tử trong mảng: ");
+    var arr = [];
+    var count = 0;
+    var index_max = 0;
+    var sum = 0;
+    var average = 0;
+    var max = 0;
+    for(var i = 0;i<n;i++){
+        arr[i]=+prompt("Nhập phần tử thứ: "+(i+1));
+        if(arr[i]>max){
+            max = arr[i];
+            index_max = arr[i];
+        }
+        sum += arr[i];
+        average = sum / n;
+    }
+    alert("Phần tử lớn nhất là: "+index_max);
+    alert("Trung bình cộng là: "+average);
+</script>
+</body>
+</html>

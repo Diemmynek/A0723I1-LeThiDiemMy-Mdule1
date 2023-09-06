@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 05</title>
+</head>
+<body>
+<script>
+    var n = prompt("Nhập số phần tử trong mảng: ")
+    var arr = [];
+    var count = 0;
+    for (var i = 0; i<n;i++){
+        arr[i]=prompt("Nhập phần tử thứ: "+(i+1));
+        if(arr[i]<0){
+             count++
+        }
+    }
+    alert("Có: " + count + " Số nguyên âm:");
+</script>
+</body>
+</html>

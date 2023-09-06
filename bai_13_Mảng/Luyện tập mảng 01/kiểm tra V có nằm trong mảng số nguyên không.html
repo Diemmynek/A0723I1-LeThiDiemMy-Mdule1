@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 06</title>
+</head>
+<body>
+<script>
+    var number = [1,2,3,4,5,6,7,8,9,10];
+    var V = +prompt("Nhập mảng số nguyên: ");
+    var check = false;
+    for(var i = 0;i < number.length;i++){
+        if(number[i] === V){
+            check = true;
+            break;
+        }
+    }
+    if(check){
+        alert("V is in the array");
+    } else {
+        alert("V is not in the array");
+    }
+</script>
+</body>
+</html>
