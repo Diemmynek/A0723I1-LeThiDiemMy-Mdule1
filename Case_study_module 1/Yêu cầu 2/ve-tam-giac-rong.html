@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ve-tam-giac-rong</title>
+</head>
+<body>
+<script>
+    let rowDiv = document.getElementById("row");
+    let height = 5;
+    let width = 2 * height - 1;
+    let row = "";
+    for (let i = 1; i <= height; i++) {
+        for (let j = 1; j <= width; j++) {
+            if (i === 5 || j === height - i + 1 || j === height + i - 1) {
+                row += "*";
+            }
+            else {
+                row += "&nbsp;&nbsp;";
+            }
+        }
+        row += "<br>";
+    }
+    document.write(row);
+</script>
+</body>
+</html>

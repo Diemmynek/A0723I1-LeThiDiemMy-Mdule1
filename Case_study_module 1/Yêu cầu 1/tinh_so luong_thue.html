@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 01</title>
+</head>
+<body>
+<script>
+    var luong;
+    do {
+        luong = parseInt(prompt("Nhập lương:"));
+    } while (luong < 0);
+    if (luong>=15) {
+        alert("phải nộp thuế 20% nếu lương là: " + (luong - (luong/100*20)));
+    } else if(luong>=7) {
+        alert("phải nộp thuế 10% nếu lương là: "+ (luong-(luong/100*10)));
+    } else {
+        alert("phải nộp thuế 5% nếu lương là: "+ (luong-(luong/100*5)));
+    }
+</script>
+</body>
+</html>
