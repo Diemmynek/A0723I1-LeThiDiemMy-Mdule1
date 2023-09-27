@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 03</title>
+</head>
+<body>
+<script>
+    function DemSoLuongKhacNhauTrongHaiXau() {
+        var s1 = prompt("Nhập kí tự của xâu thứ 1: ");
+        var s2 = prompt("Nhập kí tự của xâu thứ 2: ");
+        var count = 0;
+        for( var i = 0; i<=s1.length; i++) {
+            if(s1.includes(s2[i])) {
+                count++;
+            }
+        }
+        return count;
+    }
+    document.write("Số lượng kí tự giống nhau giữa hai xâu là: "+DemSoLuongKhacNhauTrongHaiXau());
+</script>
+</body>
+</html>

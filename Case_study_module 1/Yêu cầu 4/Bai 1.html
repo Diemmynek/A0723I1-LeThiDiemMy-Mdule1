@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 01</title>
+</head>
+<body>
+<script>
+    function ChuoiHoaXau(str) {
+        var words = str.split(" ");
+        for (var i = 0; i<= words.length-1;i++)  {
+            word = words[i].toLowerCase();
+            word = word.charAt(0).toUpperCase()+word.slice(1);
+            words[i] = word;
+        }
+        var result = words.join(" ");
+        return result;
+    }
+    function TimTuDaiNhat(str) {
+        let words = str.split(" ");
+        var worddainhat = " ";
+        for(var i = 0; i< word.length;i++)  {
+            if(word[i].length > worddainhat.length)   {
+                worddainhat = words[i];
+            }
+        }
+        return worddainhat;
+    }
+    function main() {
+        var KiTu = prompt("Nhập vào chuỗi kí tự: ");
+        document.write("Xâu trước chuẩn hóa : "+KiTu);
+        document.write("</br> Xâu đã chuỗi hóa là: "+ChuoiHoaXau(KiTu));
+        document.write("</br> Từ dài nhất là: "+ TimTuDaiNhat(KiTu));
+    }
+    main();
+</script>
+</body>
+</html>

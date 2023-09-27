@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 02</title>
+</head>
+<body>
+<script>
+    function DemSoLuongKhacNhau(str) {
+        var count = 0;
+        for (var i = 0; i<= str.length;i++) {
+            if(str[0] != str[i]) {
+                count++;
+            }
+        }
+        return count;
+    }
+    var kiTu = prompt("Nhập vào chuỗi kí tự: ");
+    document.write("Số kí tự khác nhau trong xâu: "+ DemSoLuongKhacNhau(kiTu));
+</script>
+</body>
+</html>
